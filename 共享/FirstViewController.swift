@@ -8,18 +8,110 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
 
+    
+    var mapView = MAMapView()
+    var search:AMapSearchAPI?
+    var currentLoacation = CLLocation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        loadMap()
+        MAMapServices.sharedServices().apiKey = APIKey
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func loadMap(){
+        mapView = MAMapView(frame:self.view.bounds)
+        mapView.delegate = self
+        self.view.addSubview(mapView)
+        let compassX = mapView.compassOrigin.x
+        let scaleX = mapView.scaleOrigin.x
+        mapView.compassOrigin = CGPointMake(compassX, 21)
+        mapView.scaleOrigin = CGPointMake(scaleX, 21)
+        mapView.showsUserLocation = true
+        mapView.userTrackingMode = MAUserTrackingMode.Follow
+        mapView.setZoomLevel(15.1, animated: true)
+    }
+    
+//    func loadTabBar(){
+//        self.tabBarItem.image = UIImage(named: "location")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+//        self.tabBarItem.selectedImage = UIImage(named: "locationS")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+////        self.tabBarItem = UITabBarItem.init(title: nil, image: UIImage(named: "location"), selectedImage: UIImage(named:"locationS"))
+//        self.tabBarItem.title = "location"
+//        self.view.backgroundColor = UIColor.whiteColor()
+//    }
+    
+    func loadSearch(){
+//        search = AMapSearchAPI(searchKey: APIKey, delegate: self)
+        search = AMapSearchAPI()
+        search?.delegate = self
+    }
+    
+    func search(searchRequest: AnyObject, error errInfo: String){
+        print("request:\(searchRequest),error:\(errInfo)")
+    
+    }
+    
+    func reverseGeocoding(){
+        let coordinate = currentLoacation.coordinate
+        let regeo:AMapReGeocodeSearchRequest = AMapReGeocodeSearchRequest()
+        regeo.location = AMapGeoPoint.locationWithLatitude(CGFloat(coordinate.latitude), longitude: CGFloat(coordinate.longitude))
+        print("regeo:\(regeo)")
+        self.search!.AMapReGoecodeSearch(regeo)
+    }
+    
+    func mapView(mapView: MAMapView!, didUpdateUserLocation userLocation: MAUserLocation!, updatingLocation: Bool) {
+        if updatingLocation{
+            currentLoacation = userLocation.location
+        }
+        
+        func mapView(mapView:MAMapView, didSelectAnnotationView view: MAAnnotationView){
+            if view.annotation.isKindOfClass(MAUserLocation){
+                reverseGeocoding()
+            }
+        }
+        
+        func onReGeocodeSearchDone(request: AMapReGeocodeSearchRequest,response: AMapReGeocodeSearchResponse){
+            print("request:\(request)")
+            print("response:\(response)")
+            
+            if(response.regeocode != nil){
+                var title = response.regeocode.addressComponent.city
+                var length: Int{
+                    return title.characters.count
+                }
+                if length == 0{
+                    title = response.regeocode.addressComponent.province
+                }
+            }
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
+
 

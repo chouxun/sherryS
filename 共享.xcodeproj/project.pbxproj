@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA213B921C5C4DFC00FB6678 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CA213B911C5C4DFC00FB6678 /* Default-568h@2x.png */; };
 		CA29E5961C4BE86200499735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29E5951C4BE86200499735 /* AppDelegate.swift */; };
 		CA29E5981C4BE86200499735 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29E5971C4BE86200499735 /* FirstViewController.swift */; };
 		CA29E59A1C4BE86200499735 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29E5991C4BE86200499735 /* SecondViewController.swift */; };
 		CA29E59D1C4BE86200499735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA29E59B1C4BE86200499735 /* Main.storyboard */; };
 		CA29E59F1C4BE86200499735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA29E59E1C4BE86200499735 /* Assets.xcassets */; };
 		CA29E5A21C4BE86200499735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA29E5A01C4BE86200499735 /* LaunchScreen.storyboard */; };
-		CA29E5AD1C4BE86200499735 /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29E5AC1C4BE86200499735 /* __Tests.swift */; };
-		CA29E5B81C4BE86200499735 /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA29E5B71C4BE86200499735 /* __UITests.swift */; };
+		CA4310A41C58892A0013930C /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4310A31C58892A0013930C /* AMapSearchKit.framework */; };
+		CA6616FB1C58F799009BD75D /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6616FA1C58F799009BD75D /* MAMapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		CA6616FD1C58F9C1009BD75D /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA6616FC1C58F9C1009BD75D /* AMap.bundle */; };
+		CA67688D1C539BD30030C5F8 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67688C1C539BD30030C5F8 /* mainViewController.swift */; };
+		CA67688F1C53A2420030C5F8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67688E1C53A2420030C5F8 /* ThirdViewController.swift */; };
+		CA6768911C53B9370030C5F8 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6768901C53B9370030C5F8 /* FourthViewController.swift */; };
+		CA6768931C53BA410030C5F8 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6768921C53BA410030C5F8 /* FifthViewController.swift */; };
+		CAF3E4F71C587AFC006B019A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E4F61C587AFC006B019A /* UIKit.framework */; };
+		CAF3E4F91C587B06006B019A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E4F81C587B06006B019A /* Foundation.framework */; };
+		CAF3E4FB1C587B12006B019A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E4FA1C587B12006B019A /* CoreGraphics.framework */; };
+		CAF3E4FD1C587B1F006B019A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E4FC1C587B1F006B019A /* QuartzCore.framework */; };
+		CAF3E4FF1C587B28006B019A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E4FE1C587B28006B019A /* OpenGLES.framework */; };
+		CAF3E5011C587B37006B019A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E5001C587B37006B019A /* CoreTelephony.framework */; };
+		CAF3E5031C587C28006B019A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E5021C587C28006B019A /* SystemConfiguration.framework */; };
+		CAF3E5051C587C39006B019A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E5041C587C39006B019A /* Security.framework */; };
+		CAF3E5071C587C49006B019A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E5061C587C49006B019A /* libz.tbd */; };
+		CAF3E5091C587C5D006B019A /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E5081C587C5D006B019A /* libstdc++.6.0.9.tbd */; };
+		CAF3E50B1C587C70006B019A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF3E50A1C587C70006B019A /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA29E5921C4BE86200499735 /* 共享.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "共享.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA213B911C5C4DFC00FB6678 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CA29E5921C4BE86200499735 /* sherryS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sherryS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA29E5951C4BE86200499735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA29E5971C4BE86200499735 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		CA29E5991C4BE86200499735 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -44,11 +62,27 @@
 		CA29E5A11C4BE86200499735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA29E5A31C4BE86200499735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA29E5A81C4BE86200499735 /* 共享Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "共享Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA29E5AC1C4BE86200499735 /* __Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __Tests.swift; sourceTree = "<group>"; };
-		CA29E5AE1C4BE86200499735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA29E5B31C4BE86200499735 /* 共享UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "共享UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA29E5B71C4BE86200499735 /* __UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __UITests.swift; sourceTree = "<group>"; };
-		CA29E5B91C4BE86200499735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4310A31C58892A0013930C /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		CA6616FA1C58F799009BD75D /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
+		CA6616FC1C58F9C1009BD75D /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = MAMapKit.framework/AMap.bundle; sourceTree = "<group>"; };
+		CA67688C1C539BD30030C5F8 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		CA67688E1C53A2420030C5F8 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		CA6768901C53B9370030C5F8 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		CA6768921C53BA410030C5F8 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		CA67689E1C578EB50030C5F8 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		CAF3E4F61C587AFC006B019A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CAF3E4F81C587B06006B019A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CAF3E4FA1C587B12006B019A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CAF3E4FC1C587B1F006B019A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CAF3E4FE1C587B28006B019A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CAF3E5001C587B37006B019A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CAF3E5021C587C28006B019A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CAF3E5041C587C39006B019A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CAF3E5061C587C49006B019A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CAF3E5081C587C5D006B019A /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		CAF3E50A1C587C70006B019A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		CAF3E50D1C587CF2006B019A /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6616FB1C58F799009BD75D /* MAMapKit.framework in Frameworks */,
+				CA4310A41C58892A0013930C /* AMapSearchKit.framework in Frameworks */,
+				CAF3E50B1C587C70006B019A /* libc++.tbd in Frameworks */,
+				CAF3E5091C587C5D006B019A /* libstdc++.6.0.9.tbd in Frameworks */,
+				CAF3E5071C587C49006B019A /* libz.tbd in Frameworks */,
+				CAF3E5051C587C39006B019A /* Security.framework in Frameworks */,
+				CAF3E5031C587C28006B019A /* SystemConfiguration.framework in Frameworks */,
+				CAF3E5011C587B37006B019A /* CoreTelephony.framework in Frameworks */,
+				CAF3E4FF1C587B28006B019A /* OpenGLES.framework in Frameworks */,
+				CAF3E4FD1C587B1F006B019A /* QuartzCore.framework in Frameworks */,
+				CAF3E4FB1C587B12006B019A /* CoreGraphics.framework in Frameworks */,
+				CAF3E4F91C587B06006B019A /* Foundation.framework in Frameworks */,
+				CAF3E4F71C587AFC006B019A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +126,9 @@
 		CA29E5891C4BE86200499735 = {
 			isa = PBXGroup;
 			children = (
+				CA213B911C5C4DFC00FB6678 /* Default-568h@2x.png */,
+				CAF3E4F51C587967006B019A /* FrameWorks */,
 				CA29E5941C4BE86200499735 /* 共享 */,
-				CA29E5AB1C4BE86200499735 /* 共享Tests */,
-				CA29E5B61C4BE86200499735 /* 共享UITests */,
 				CA29E5931C4BE86200499735 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +136,7 @@
 		CA29E5931C4BE86200499735 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA29E5921C4BE86200499735 /* 共享.app */,
+				CA29E5921C4BE86200499735 /* sherryS.app */,
 				CA29E5A81C4BE86200499735 /* 共享Tests.xctest */,
 				CA29E5B31C4BE86200499735 /* 共享UITests.xctest */,
 			);
@@ -99,33 +146,74 @@
 		CA29E5941C4BE86200499735 /* 共享 */ = {
 			isa = PBXGroup;
 			children = (
-				CA29E5951C4BE86200499735 /* AppDelegate.swift */,
-				CA29E5971C4BE86200499735 /* FirstViewController.swift */,
-				CA29E5991C4BE86200499735 /* SecondViewController.swift */,
-				CA29E59B1C4BE86200499735 /* Main.storyboard */,
-				CA29E59E1C4BE86200499735 /* Assets.xcassets */,
-				CA29E5A01C4BE86200499735 /* LaunchScreen.storyboard */,
-				CA29E5A31C4BE86200499735 /* Info.plist */,
+				CAF3E50C1C587CB2006B019A /* Bridge */,
+				CA6768941C577C290030C5F8 /* common */,
+				CA67689D1C578E620030C5F8 /* Configuration */,
+				CA6768951C577C640030C5F8 /* Controllers */,
 			);
 			path = "共享";
 			sourceTree = "<group>";
 		};
-		CA29E5AB1C4BE86200499735 /* 共享Tests */ = {
+		CA6768941C577C290030C5F8 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				CA29E5AC1C4BE86200499735 /* __Tests.swift */,
-				CA29E5AE1C4BE86200499735 /* Info.plist */,
+				CA29E5A31C4BE86200499735 /* Info.plist */,
+				CA29E5A01C4BE86200499735 /* LaunchScreen.storyboard */,
+				CA29E59E1C4BE86200499735 /* Assets.xcassets */,
+				CA29E59B1C4BE86200499735 /* Main.storyboard */,
+				CA29E5951C4BE86200499735 /* AppDelegate.swift */,
 			);
-			path = "共享Tests";
+			name = common;
 			sourceTree = "<group>";
 		};
-		CA29E5B61C4BE86200499735 /* 共享UITests */ = {
+		CA6768951C577C640030C5F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CA29E5B71C4BE86200499735 /* __UITests.swift */,
-				CA29E5B91C4BE86200499735 /* Info.plist */,
+				CA67688C1C539BD30030C5F8 /* mainViewController.swift */,
+				CA29E5971C4BE86200499735 /* FirstViewController.swift */,
+				CA29E5991C4BE86200499735 /* SecondViewController.swift */,
+				CA67688E1C53A2420030C5F8 /* ThirdViewController.swift */,
+				CA6768901C53B9370030C5F8 /* FourthViewController.swift */,
+				CA6768921C53BA410030C5F8 /* FifthViewController.swift */,
 			);
-			path = "共享UITests";
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CA67689D1C578E620030C5F8 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CA67689E1C578EB50030C5F8 /* APIKey.h */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		CAF3E4F51C587967006B019A /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				CA6616FA1C58F799009BD75D /* MAMapKit.framework */,
+				CA6616FC1C58F9C1009BD75D /* AMap.bundle */,
+				CA4310A31C58892A0013930C /* AMapSearchKit.framework */,
+				CAF3E50A1C587C70006B019A /* libc++.tbd */,
+				CAF3E5081C587C5D006B019A /* libstdc++.6.0.9.tbd */,
+				CAF3E5061C587C49006B019A /* libz.tbd */,
+				CAF3E5041C587C39006B019A /* Security.framework */,
+				CAF3E5021C587C28006B019A /* SystemConfiguration.framework */,
+				CAF3E5001C587B37006B019A /* CoreTelephony.framework */,
+				CAF3E4FE1C587B28006B019A /* OpenGLES.framework */,
+				CAF3E4FC1C587B1F006B019A /* QuartzCore.framework */,
+				CAF3E4FA1C587B12006B019A /* CoreGraphics.framework */,
+				CAF3E4F81C587B06006B019A /* Foundation.framework */,
+				CAF3E4F61C587AFC006B019A /* UIKit.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		CAF3E50C1C587CB2006B019A /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				CAF3E50D1C587CF2006B019A /* Bridge.h */,
+			);
+			name = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +233,7 @@
 			);
 			name = "共享";
 			productName = "共享";
-			productReference = CA29E5921C4BE86200499735 /* 共享.app */;
+			productReference = CA29E5921C4BE86200499735 /* sherryS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CA29E5A71C4BE86200499735 /* 共享Tests */ = {
@@ -190,12 +278,14 @@
 		CA29E58A1C4BE86200499735 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = st;
 				TargetAttributes = {
 					CA29E5911C4BE86200499735 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = RTBHDR2VF4;
 					};
 					CA29E5A71C4BE86200499735 = {
 						CreatedOnToolsVersion = 7.2;
@@ -234,6 +324,8 @@
 			files = (
 				CA29E5A21C4BE86200499735 /* LaunchScreen.storyboard in Resources */,
 				CA29E59F1C4BE86200499735 /* Assets.xcassets in Resources */,
+				CA6616FD1C58F9C1009BD75D /* AMap.bundle in Resources */,
+				CA213B921C5C4DFC00FB6678 /* Default-568h@2x.png in Resources */,
 				CA29E59D1C4BE86200499735 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6768911C53B9370030C5F8 /* FourthViewController.swift in Sources */,
 				CA29E59A1C4BE86200499735 /* SecondViewController.swift in Sources */,
 				CA29E5961C4BE86200499735 /* AppDelegate.swift in Sources */,
+				CA67688F1C53A2420030C5F8 /* ThirdViewController.swift in Sources */,
 				CA29E5981C4BE86200499735 /* FirstViewController.swift in Sources */,
+				CA67688D1C539BD30030C5F8 /* mainViewController.swift in Sources */,
+				CA6768931C53BA410030C5F8 /* FifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +365,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA29E5AD1C4BE86200499735 /* __Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +372,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA29E5B81C4BE86200499735 /* __UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,22 +494,49 @@
 		CA29E5BD1C4BE86200499735 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/共享",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "共享/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.17.--";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/共享",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.renjie.www;
+				PRODUCT_NAME = sherryS;
+				SWIFT_OBJC_BRIDGING_HEADER = "共享/Bridge.h";
 			};
 			name = Debug;
 		};
 		CA29E5BE1C4BE86200499735 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/共享",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "共享/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.17.--";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/共享",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.renjie.www;
+				PRODUCT_NAME = sherryS;
+				SWIFT_OBJC_BRIDGING_HEADER = "共享/Bridge.h";
 			};
 			name = Release;
 		};
@@ -486,6 +607,7 @@
 				CA29E5BE1C4BE86200499735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA29E5BF1C4BE86200499735 /* Build configuration list for PBXNativeTarget "共享Tests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +616,7 @@
 				CA29E5C11C4BE86200499735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA29E5C21C4BE86200499735 /* Build configuration list for PBXNativeTarget "共享UITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +625,7 @@
 				CA29E5C41C4BE86200499735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
