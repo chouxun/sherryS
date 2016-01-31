@@ -17,12 +17,4 @@ class ThirdViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func loadTabBar(){
-        self.tabBarItem.image = UIImage(named: "notice")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        self.tabBarItem.selectedImage = UIImage(named: "noticeS")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        self.tabBarItem.title = "notice"
-        self.view.backgroundColor = UIColor.whiteColor()
-    }
-    
 }

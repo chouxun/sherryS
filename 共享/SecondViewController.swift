@@ -16,15 +16,7 @@ class SecondViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
-
-    func loadTabBar(){
-        self.tabBarItem.image = UIImage(named: "favorite")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        self.tabBarItem.selectedImage = UIImage(named: "favoriteS")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        self.tabBarItem.title = "favorite"
-        self.view.backgroundColor = UIColor.whiteColor()
-    }
-
+    
 }
 

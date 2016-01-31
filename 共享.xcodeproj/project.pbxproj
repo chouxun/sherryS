@@ -278,6 +278,7 @@
 		CA29E58A1C4BE86200499735 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RJ;
 				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;

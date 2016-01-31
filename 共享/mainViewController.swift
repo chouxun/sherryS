@@ -16,7 +16,6 @@ class mainViewController: UITabBarController {
         super.viewDidLoad()
         loadAllViewController()
         self.tabBar.backgroundColor = UIColor.grayColor()
-//        self.tabBarItem.titlePositionAdjustment = UIOffsetMake(2.0, 100)
     }
     
     override func didReceiveMemoryWarning() {
@@ -30,22 +29,21 @@ class mainViewController: UITabBarController {
         let third = ThirdViewController()
         let fourth = FourthViewController()
         let fifth = FifthViewController()
-        self.viewControllers = [first,second,third,fourth,fifth]
-
-        first.tabBarItem = loadTabBar(UIImage(named: "location")!, TabBarImageSelected: UIImage(named: "locationS")!, Title: "location")
-//        second.loadTabBar()
-//        third.loadTabBar()
-//        fourth.loadTabBar()
-//        fifth.loadTabBar()
+        
+        self.loadAllChildVc(first, tabImage: "location", tabBarImaSelected: "locationS", title: "location")
+        self.loadAllChildVc(second, tabImage: "favorite", tabBarImaSelected: "favoriteS", title: "favorite")
+        self.loadAllChildVc(third, tabImage: "notice", tabBarImaSelected: "noticeS", title: "notice")
+        self.loadAllChildVc(fourth, tabImage: "symbol", tabBarImaSelected: "symbolS", title: "symbol")
+        self.loadAllChildVc(fifth, tabImage: "issue", tabBarImaSelected: "issueS", title: "issue")
+        
         self.selectedIndex = 4
     }
     
-    func loadTabBar(TabBarImage:UIImage, TabBarImageSelected:UIImage, Title:NSString)->UITabBarItem{
-        let tabBarI = UITabBarItem()
-        tabBarI.title = Title as String
-        tabBarI.image = TabBarImage.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        tabBarI.selectedImage = TabBarImageSelected.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        return tabBarI
+    func loadAllChildVc(childVc:UIViewController, tabImage:String, tabBarImaSelected:String,title:String)->Void {
+        childVc.tabBarItem.image = UIImage(named: tabImage)!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        childVc.tabBarItem.selectedImage = UIImage(named: tabBarImaSelected)!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
+        childVc.tabBarItem.title = title
+        self.addChildViewController(childVc)
     }
     
 }

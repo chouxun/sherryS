@@ -16,11 +16,4 @@ class FourthViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func loadTabBar(){
-        self.tabBarItem.image = UIImage(named: "symbol")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        self.tabBarItem.selectedImage = UIImage(named: "symbolS")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        self.tabBarItem.title = "symbol"
-        self.view.backgroundColor = UIColor.whiteColor()
-    }
 }

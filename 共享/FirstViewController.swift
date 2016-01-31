@@ -39,16 +39,7 @@ class FirstViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate
         mapView.setZoomLevel(15.1, animated: true)
     }
     
-//    func loadTabBar(){
-//        self.tabBarItem.image = UIImage(named: "location")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-//        self.tabBarItem.selectedImage = UIImage(named: "locationS")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-////        self.tabBarItem = UITabBarItem.init(title: nil, image: UIImage(named: "location"), selectedImage: UIImage(named:"locationS"))
-//        self.tabBarItem.title = "location"
-//        self.view.backgroundColor = UIColor.whiteColor()
-//    }
-    
     func loadSearch(){
-//        search = AMapSearchAPI(searchKey: APIKey, delegate: self)
         search = AMapSearchAPI()
         search?.delegate = self
     }

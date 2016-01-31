@@ -16,11 +16,4 @@ class FifthViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func loadTabBar(){
-        self.tabBarItem.image = UIImage(named: "issue")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        self.tabBarItem.selectedImage = UIImage(named: "issueS")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        self.tabBarItem.title = "release"
-        self.view.backgroundColor = UIColor.whiteColor()
-    }
 }
