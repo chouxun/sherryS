@@ -36,10 +36,10 @@ class mainViewController: UITabBarController {
         self.loadAllChildVc(fourth, tabImage: "symbol", tabBarImaSelected: "symbolS", title: "symbol")
         self.loadAllChildVc(fifth, tabImage: "issue", tabBarImaSelected: "issueS", title: "issue")
         
-        self.selectedIndex = 4
+        self.selectedIndex = 0
     }
     
-    func loadAllChildVc(childVc:UIViewController, tabImage:String, tabBarImaSelected:String,title:String)->Void {
+    func loadAllChildVc(childVc:UINavigationController, tabImage:String, tabBarImaSelected:String,title:String)->Void {
         childVc.tabBarItem.image = UIImage(named: tabImage)!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         childVc.tabBarItem.selectedImage = UIImage(named: tabBarImaSelected)!.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
         childVc.tabBarItem.title = title

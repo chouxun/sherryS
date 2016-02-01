@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,84 +8,36 @@
 
 import UIKit
 
-class FirstViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate {
-
-    
-    var mapView = MAMapView()
-    var search:AMapSearchAPI?
-    var currentLoacation = CLLocation()
+class FirstViewController: UINavigationController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadMap()
-        MAMapServices.sharedServices().apiKey = APIKey
-        
+        self.view.backgroundColor = UIColor.grayColor()
+        self.navigationBar.backgroundColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func loadMap(){
-        mapView = MAMapView(frame:self.view.bounds)
-        mapView.delegate = self
-        self.view.addSubview(mapView)
-        let compassX = mapView.compassOrigin.x
-        let scaleX = mapView.scaleOrigin.x
-        mapView.compassOrigin = CGPointMake(compassX, 21)
-        mapView.scaleOrigin = CGPointMake(scaleX, 21)
-        mapView.showsUserLocation = true
-        mapView.userTrackingMode = MAUserTrackingMode.Follow
-        mapView.setZoomLevel(15.1, animated: true)
+    override func viewDidAppear(animated: Bool) {
+        self.navigationBar.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, 150)
+        initNavBar()
     }
     
-    func loadSearch(){
-        search = AMapSearchAPI()
-        search?.delegate = self
+    func initNavBar(){
+        let search = UISearchBar()
+        search.searchBarStyle = UISearchBarStyle.Default
+        search.placeholder = "试着搜索一下~"
+        search.keyboardType = UIKeyboardType.Default
+        search.translucent = true
+        search.frame = CGRectMake(30, 60, UIScreen.mainScreen().bounds.width - 60, 30)
+        self.navigationBar.addSubview(search)
     }
     
-    func search(searchRequest: AnyObject, error errInfo: String){
-        print("request:\(searchRequest),error:\(errInfo)")
-    
-    }
-    
-    func reverseGeocoding(){
-        let coordinate = currentLoacation.coordinate
-        let regeo:AMapReGeocodeSearchRequest = AMapReGeocodeSearchRequest()
-        regeo.location = AMapGeoPoint.locationWithLatitude(CGFloat(coordinate.latitude), longitude: CGFloat(coordinate.longitude))
-        print("regeo:\(regeo)")
-        self.search!.AMapReGoecodeSearch(regeo)
-    }
-    
-    func mapView(mapView: MAMapView!, didUpdateUserLocation userLocation: MAUserLocation!, updatingLocation: Bool) {
-        if updatingLocation{
-            currentLoacation = userLocation.location
-        }
-        
-        func mapView(mapView:MAMapView, didSelectAnnotationView view: MAAnnotationView){
-            if view.annotation.isKindOfClass(MAUserLocation){
-                reverseGeocoding()
-            }
-        }
-        
-        func onReGeocodeSearchDone(request: AMapReGeocodeSearchRequest,response: AMapReGeocodeSearchResponse){
-            print("request:\(request)")
-            print("response:\(response)")
-            
-            if(response.regeocode != nil){
-                var title = response.regeocode.addressComponent.city
-                var length: Int{
-                    return title.characters.count
-                }
-                if length == 0{
-                    title = response.regeocode.addressComponent.province
-                }
-            }
-        }
+    func navBarChanged(){
         
     }
-    
-    
     
     
     
